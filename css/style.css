@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "Rosarium";
+    src: url("../fonts/Rosarium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    position: relative;
+    height: 50px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #2a2a2a;
+    z-index: 2;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu .menu_link{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.menu .menu_item{
+    border-right: 2px dotted black;
+    padding-right: 58px;
+}
+
+.subheader{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 84px;
+    background-image: linear-gradient(rgba(206,220,23, 0.4), rgba(255, 255, 255, 0.6)), url("../img/cheese.jpg");
+    background-position: center;
+}
+
+.subheader .subheader_logo {
+    max-width: 100%;
+}
+
+.subheader .subname {
+    margin-top: 5px;
+    font-size:50px;
+    font-family: "Rosarium", sans-serif;
+    color: #212121;
+}
+
+.subheader .mail{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 14px;
+    font-size: 18px;
+    font-weight:600;
+}
+
+.subheader .subheader_btn {
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(0deg, orange 0%, yellow 100%);
+    box-shadow: 0px -3px 0px 0px #0000001F inset;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.promo {
+    min-height: 800px;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2)), url("../img/scale_1200.jpg") center center/cover no-repeat;
+    padding: 150px 0 150px 0; 
+}
+
+.promo .promo_header {
+    color: rgb(255, 153, 27);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 30px;
+    text-align: center;
+    -webkit-text-stroke: 2px #212121d4;
+}
+
+.promo .promo_subheader {
+    color: rgb(255,166,0);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.promo .promo_descr {
+    color: #000000;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.promo .promo_btn {
+    display: block;
+    margin: 100px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(0deg, orange 0%, yellow 100%);
+    box-shadow: 0px -3px 0px 0px #0000001F inset;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.information{
+    margin: 20px 0;
+    padding: 20px 0;
+    background: url(../img/cheese3.png) center center/cover no-repeat;
+}
+
+.information .inf_name{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Times New Roman', Times, serif;
+    color:#ffffff;
+    margin: 80px auto;
+    height: 50px;
+    width: 200px;
+    padding: 5px 70;
+    background-color: rgb(255, 153, 27);
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.information .inf_plat1{
+    border-radius: 10px;
+    padding: 15px;
+    background-image: url(../img/fon.jpg);
+    margin-top: 40px;
+}
+
+.information .inf_descr{
+    color: rgb(251, 227, 197);
+    font-size:x-large;
+    font-weight: 550;
+    text-align: justify;
+}
+
+.information .inf_plat2{
+    margin-top: 40px;
+}
+
+.katalog .kat_name{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Times New Roman', Times, serif;
+    color:#ffffff;
+    margin: 30px auto;
+    height: 50px;
+    width: 200px;
+    padding: 5px 70;
+    background-color: rgb(255, 153, 27);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.katalog .card .card-body .card-title{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.katalog .card .card-body .card-text{
+    text-align: justify;
+}
+
+.katalog .card .card-body .buttong{
+    text-align: center;
+}
+
+.sertification .ser_name{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Times New Roman', Times, serif;
+    color:#ffffff;
+    margin: 30px auto;
+    height: 50px;
+    width: 200px;
+    padding: 5px 70;
+    background-color: rgb(255, 153, 27);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.sertification .ser_descr{
+    margin: 20px 50px 20px 50px;
+    font-size:x-large;
+    font-weight: 550;
+    text-indent: 15px;
+    text-align: justify;
+}
+
+.sertification .ser_section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sertification .ser_photo .ph{
+    width: 350px;
+    margin: 0px 20px 5px 40px;
+}
+
+.final .line{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 90%;
+    margin: 30px 20px 10px 80px;
+}
+
+.final .social-icons {
+    display: flex;
+    justify-content: start;
+    margin: 0px auto 50px 30px;
+}
+   
+.final .social-icons a {
+    margin: 0 20px;
+}
+   
+.final .social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+   
+.final .social-icons a:hover img {
+    transform: scale(1.2);
+}

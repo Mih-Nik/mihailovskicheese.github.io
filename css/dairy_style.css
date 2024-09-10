@@ -1,0 +1,334 @@
+@font-face {
+    font-family: "Rosarium";
+    src: url("../fonts/Rosarium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: rgb(255, 225, 119);
+}
+
+.line{
+    background-color:rgb(205, 126, 0);
+    width: 100%;
+    height: 10px;
+}
+
+header {
+    position: relative;
+    height: 50px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #2a2a2a;
+    z-index: 2;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu .menu_link{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.menu .menu_item{
+    border-right: 2px dotted black;
+    padding-right: 58px;
+}
+
+.subheader{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 84px;
+    background-image: linear-gradient(rgba(206,220,23, 0.4), rgba(255, 255, 255, 0.4)), url("../img/cheese.jpg");
+    background-position: center;
+}
+
+.subheader .subheader_logo {
+    max-width: 100%;
+}
+
+.subheader .subname {
+    margin-top: 5px;
+    font-size:50px;
+    font-family: "Rosarium", sans-serif;
+    color: #212121;
+}
+
+.subheader .mail{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 14px;
+    font-size: 18px;
+    font-weight:600;
+}
+
+.subheader .subheader_btn {
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(0deg, orange 0%, yellow 100%);
+    box-shadow: 0px -3px 0px 0px #0000001F inset;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.promo {
+    min-height: 800px;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(34, 34, 34, 0.2)), url("../img/scale_1200.jpg") center center/cover no-repeat;
+    padding: 150px 0 150px 0; 
+}
+
+.promo .promo_header {
+    color: rgb(255, 153, 27);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 30px;
+    text-align: center;
+    -webkit-text-stroke: 2px #212121d4;
+}
+
+.promo .promo_subheader {
+    color: rgb(255,166,0);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.promo .promo_descr {
+    -webkit-text-stroke: 1px #ffd83c;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.promo .promo_btn {
+    display: block;
+    margin: 100px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(0deg, orange 0%, yellow 100%);
+    box-shadow: 0px -3px 0px 0px #0000001F inset;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.information{
+    padding: 30px;
+    background: radial-gradient( rgba(0, 0, 0, 0.4), rgba(255, 221, 85, 0)), url(../img/cheese3.png) center center/cover no-repeat;
+}
+
+.inf_name{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Times New Roman', Times, serif;
+    color:#ffffff;
+    margin: 40px auto;
+    border: solid rgb(205, 126, 0);
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(255, 153, 27);
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.information .inf_plat1{
+    border-radius: 10px;
+    padding: 15px 10px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(118, 118, 118, 0.15)) , url(../img/fon1.jpg);
+    margin: 40px 10px;
+}
+
+.information .inf_plat1 .inf_photo1{
+    display: flex;
+    justify-content: center;
+    margin: 10px 15px;
+}
+
+.information .inf_descr{
+    padding: 50px;
+    color: rgb(255, 174, 74);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 30px;
+    list-style-type:initial;
+}
+
+.information .inf_descr .serebro{
+    width: 80px;
+}
+
+.information .inf_descr .bronza{
+    width: 73px;
+}
+
+.information .inf_plat2{
+    border-radius: 10px;
+    padding: 15px 10px;
+    background-image: radial-gradient(circle, rgb(0, 0, 0, 0.8), rgba(118, 118, 118, 0.15)) , url(../img/fon2.jpg);
+    margin: 40px 10px;
+}
+
+.information .inf_plat2 .inf_photo2{
+    display: flex;
+    justify-content: center;
+    margin: 10px 15px;
+}
+
+.information .inf_plat3{
+    display: flex;
+    justify-content: baseline;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-image: radial-gradient(circle, rgb(0, 0, 0, 0.7), rgba(118, 118, 118, 0.15)) , url(../img/fon2.jpg);
+    margin: 40px 10px 80px;
+}
+
+.information .inf_plat3 .inf_photo3{
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px;
+}
+
+.katalog{
+    padding: 30px;
+    background: linear-gradient(rgba(255, 255, 255, 0.355), rgba(0, 0, 0, 0.255)), url(../img/cheese2.jpg) center center/cover no-repeat;
+}
+
+.katalog .kat_name{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Times New Roman', Times, serif;
+    color:#ffffff;
+    margin: 60px auto;
+    border: solid rgb(205, 126, 0);
+    height: 50px;
+    width: 200px;
+    padding: 5px 70;
+    background-color: rgb(255, 153, 27);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.katalog .card{
+    border: solid rgb(0, 0, 0);
+    margin-bottom: 60px;
+}
+
+.katalog .card .card-body .card-title{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.katalog .card .card-body .card-text{
+    text-indent: 10px;
+    text-align: justify;
+}
+
+.katalog .card .card-body .buttong{
+    text-align: center;
+}
+
+.sertification .ser_name{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Times New Roman', Times, serif;
+    color:#ffffff;
+    margin: 80px auto;
+    border: solid rgb(205, 126, 0);
+    height: 50px;
+    width: 200px;
+    padding: 5px 70;
+    background-color: rgb(255, 153, 27);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.sertification .ser_descr{
+    margin: 20px 50px 20px 50px;
+    font-size:x-large;
+    font-weight: 550;
+    text-indent: 15px;
+    text-align: justify;
+}
+
+.sertification .ser_section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sertification .ser_photo .ph{
+    width: 350px;
+    margin: 0px 20px 5px 40px;
+}
+
+.final .social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px auto 50px 30px;
+}
+   
+.final .social-icons a {
+    margin: 0 20px;
+}
+   
+.final .social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 20px auto 20px;
+    transition: transform 0.3s;
+}
+   
+.final .social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.final .karta{
+    margin-bottom: 20px;
+}
